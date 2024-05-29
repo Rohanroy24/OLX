@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - CarValue Plus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .message-section {
+            background-color: white;
+            color: #333;
+            padding: 2rem 1rem;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .message-section .message-content {
+            max-width: 600px;
+            margin: 0 auto;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .message-section h1 {
+            color: #ff6600;
+            font-size: 2rem;
+        }
+
+        .message-section p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .message-section .smiley {
+            font-size: 4rem;
+            margin-top: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CarValue Plus</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="message-section">
+        <div class="message-content">
+            <h1>Thank You!</h1>
+            <p>We appreciate you contacting us. One of our representatives will get back to you shortly.</p>
+            <div class="smiley">&#128516;</div> <!-- Unicode for a smiling face -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CarValue Plus. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -84,6 +84,40 @@
             color: #ff6600;
         }
 
+        .price-check-section {
+            background-color: #fff;
+            color: #333;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .price-check-section h2 {
+            color: #ff6600;
+        }
+
+        .price-check-section form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .price-check-section form input, .price-check-section form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .price-check-section form button {
+            background-color: #ff6600;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -103,7 +137,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -112,10 +146,10 @@
         <div class="home-content">
             <h1>Welcome to CarValue Plus</h1>
             <p>Your go-to platform for second-hand car prices.</p>
-            <a href="#price-check" class="btn">Know Your Car Price</a>
+            <a href="/check" class="btn">Know Your Car Price</a>
         </div>
         <div class="car-animation">
-            <img src= "https://cdn.i-scmp.com/sites/default/files/d8/images/canvas/2023/12/22/37db6a18-d869-4d2d-82c0-5178f7d7dac3_015c7211.jpg" alt="Car Image">
+            <img src="https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg" alt="Car Image">
         </div>
     </section>
 
@@ -132,6 +166,18 @@
             <li>Comprehensive car database</li>
             <li>Trusted by thousands of users</li>
         </ul>
+    </section>
+
+    <section id="price-check" class="price-check-section">
+        <h2>Know Your Car Price</h2>
+        <form>
+            <input type="text" name="car-make" placeholder="Car Make" required>
+            <input type="text" name="car-model" placeholder="Car Model" required>
+            <input type="number" name="car-year" placeholder="Year of Manufacture" required>
+            <input type="number" name="car-mileage" placeholder="Mileage (km)" required>
+            <textarea name="additional-info" placeholder="Additional Information" rows="4"></textarea>
+            <button type="submit">Get Price</button>
+        </form>
     </section>
 
     <footer>
