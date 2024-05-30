@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarValue Plus - Know Your Car Price</title>
+    <title>CarValue Plus - Car Price Result</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,7 +41,7 @@
             font-weight: bold;
         }
 
-        .home-section {
+        .result-section {
             background-color: white;
             color: #333;
             padding: 2rem 1rem;
@@ -49,39 +49,29 @@
             position: relative;
         }
 
-        .home-section .home-content {
+        .result-section .result-content {
             max-width: 600px;
             margin: 0 auto;
         }
 
-        .home-section .btn {
-            background-color: #ff6600;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 1rem;
-        }
-
-        .home-section .car-animation {
-            margin-top: 2rem;
-        }
-
-        .home-section .car-animation img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .about-section, .features-section {
-            padding: 2rem 1rem;
-            text-align: center;
-            background-color: #fff;
-            margin-top: 1rem;
-        }
-
-        .about-section h2, .features-section h2 {
+        .result-section h1 {
             color: #ff6600;
+        }
+
+        .car-animation {
+            margin-top: 2rem;
+            animation: drive 5s linear;
+        }
+
+        @keyframes drive {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .car-price {
+            margin-top: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
         }
 
         footer {
@@ -108,30 +98,15 @@
         </nav>
     </header>
 
-    <section id="home" class="home-section">
-        <div class="home-content">
-            <h1>Welcome to CarValue Plus</h1>
-            <p>Your go-to platform for second-hand car prices.</p>
-            <a href="/check" class="btn">Know Your Car Price</a>
+    <section id="result" class="result-section">
+        <div class="result-content">
+            <h1>Your Car Price</h1>
+            <div class="car-animation">🚗</div>
+            <div class="car-price">
+                <!-- Dynamic price will be inserted here -->
+                <span id="price">{{ price }}</span>
+            </div>
         </div>
-        <div class="car-animation">
-            <img src="https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg" alt="Car Image">
-        </div>
-    </section>
-
-    <section id="about" class="about-section">
-        <h2>About CarValue Plus</h2>
-        <p>CarValue Plus is designed to provide accurate second-hand car prices to help you make informed decisions. Whether you're buying or selling, our platform offers the latest market insights.</p>
-    </section>
-
-    <section id="features" class="features-section">
-        <h2>Features</h2>
-        <ul>
-            <li>Real-time price updates</li>
-            <li>User-friendly interface</li>
-            <li>Comprehensive car database</li>
-            <li>Trusted by thousands of users</li>
-        </ul>
     </section>
 
     <footer>
