@@ -10,7 +10,7 @@ app = Flask(__name__)
 def homepage():
     return render_template("home.html")
 
-@app.route('/contact',methods = ["GET","POST"] )
+@app.route('/contact',methods = ["GET","POST"])
 
 def contactus():
     if request.method=='POST':
