@@ -25,7 +25,7 @@ def contactus():
         cur = conn.cursor()
         cur.execute(f'''
         INSERT INTO CONTACTS VALUES(
-                    "{name}","{Phone_no}","{Email}",
+                    "{name}",{Phone_no},"{Email}",
                     "{Country}","{State}","{Message}"
         )
         ''')
@@ -76,5 +76,5 @@ def predict():
 
 
 if __name__=='__main__':
-    app.run(host="0.0.0.0",port=5500)
+    app.run(host="0.0.0.0",port=5700)
 
