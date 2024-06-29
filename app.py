@@ -25,7 +25,7 @@ def contactus():
         cur = conn.cursor()
         cur.execute(f'''
         INSERT INTO CONTACTS VALUES(
-                    "{name}","{Phone_no}","{Email}",
+                    "{name}",{Phone_no},"{Email}",
                     "{Country}","{State}","{Message}"
         )
         ''')
